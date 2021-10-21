@@ -23,6 +23,7 @@ public class Hilo extends Thread {
         }
 
         tiempoFinalizacion = System.currentTimeMillis();
+        Main.listaHilosOrdenada.add(this);
         long tiempoDormido = tiempoFinalizacion - comienzo;
         System.out.println("Soy el hilo nº " + numero + " y he dormido por " + tiempoDormido + " milisegundos");
     }

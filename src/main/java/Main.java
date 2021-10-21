@@ -3,6 +3,9 @@ import java.util.ArrayList;
 public class Main {
 
 
+    static ArrayList<Hilo> listaHilosOrdenada = new ArrayList<>();
+
+
     public static void main(String[] args) {
 
         ArrayList<Hilo> listaHilos = new ArrayList<>();
@@ -20,11 +23,11 @@ public class Main {
                 e.printStackTrace();
             }
         }
-        mostraListado(listaHilos);
+        mostraListado();
     }
 
-    private static void mostraListado(ArrayList<Hilo> listaHilos) {
-        for (Hilo hilo : listaHilos){
+    private static void mostraListado() {
+        for (Hilo hilo : listaHilosOrdenada){
             System.out.println("El hilo " + hilo.numero + " ha finalizado en el milisegundo " + hilo.tiempoFinalizacion);
         }
     }
