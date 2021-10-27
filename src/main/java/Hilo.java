@@ -26,11 +26,9 @@ public class Hilo extends Thread {
                 repeticiones++;
                 i=r.nextInt(2);
                 }
- 
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-
 
         Main.listaHilosOrdenada.add(this);
 
